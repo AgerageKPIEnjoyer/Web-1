@@ -7,7 +7,7 @@
 body, html {
     font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     height: 100vh;    
-    font-size: clamp(16px, 1.5vw, 24px);
+    font-size: clamp(16px, 1.5vw, 18px);
     overflow: auto;
     background: #121212;
     color: #f0f0f0;
@@ -104,7 +104,7 @@ body, html {
     background: #333;
     color: #fff;
     border: 1.5px solid #555;
-    font-size: 2vw;
+    font-size: clamp(18px, 2.5vw, 25px);
     padding: 1vh 2vw; 
     position: absolute;
     display: inline-block;    
@@ -120,15 +120,13 @@ body, html {
 .block-x {
     top: 50%;
     left: 10px;
-    transform: translateY(-50%);
-    font-size: clamp(20px, 2.5vw, 40px);
+    transform: translateY(-50%);    
 }
 
 .block-y {
     bottom: 50%;
     right: 10px;
-    transform: translateY(50%);
-    font-size: clamp(20px, 2.5vw, 40px);
+    transform: translateY(50%);    
 }
 
 .block p {    
