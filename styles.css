@@ -70,7 +70,8 @@ body, html {
   left: 20%;
   width: calc(60% - 5px);
   height: 35%;
-  margin: 5px 0; 
+  margin: 5px 0;
+  background-color: #121629;
 }
 
 .block5 {
@@ -78,6 +79,7 @@ body, html {
   left: calc(79.6% + 5px);
   width: 20%;
   height: calc( 50% - 5px);
+  background-color: #040817;
 }
 
 .block6 {
@@ -86,6 +88,7 @@ body, html {
     width: calc(60% - 5px); /* Вираховуємо ширину з урахуванням margin */
     height: calc(15% - 5px);
     margin: 5px 0;
+    background-color: #0d042e;
 }
 
 .block7 {
@@ -105,10 +108,13 @@ body, html {
     padding: 1vh 2vw; 
     position: absolute;
     display: inline-block;    
-    max-width: 80%;
+    max-width: 40%;
+    max-height: 100px;
     text-align: center;
     overflow: auto;  
     box-sizing: border-box;
+    word-break: break-word;
+    white-space: normal;
 }
 
 .block-x {
