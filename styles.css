@@ -52,33 +52,33 @@ body, html {
     float: left; /* Вирівнює блок2 ліворуч */    
 }
 
-.block3, .block4, .block5, .block6 {
-    background: #23272f;
+.block3, .block4, .block5, .block6 {    
     color: #f0f0f0;
 }
 
 .block3 {
-    top: calc(20% + 5px);
+    top: calc(20% + 5px); /* Вираховуємо розташування під block1 з урахуванням margin */
     left: 20%;    
     width: 80%;
     height: 10%;   
-    margin-bottom: 5px; /* Додаємо відстань знизу для блоку 3 */
+    margin-bottom: 5px; /* Додаємо відстань знизу для block3 */
+    background: #23272f;
 }
 
 .block4 {
-  top: calc(30% + 5px);
+  top: calc(30% + 5px); /* Вираховуємо розташування під block3 з урахуванням margin */
   left: 20%;
-  width: calc(60% - 5px);
+  width: calc(60% - 5px); /* Вираховуємо ширину з урахуванням margin */
   height: 35%;
   margin: 5px 0;
   background-color: #121629;
 }
 
 .block5 {
-  top: calc(30% + 10px);
-  left: calc(79.6% + 5px);
+  top: calc(30% + 10px); /* Вираховуємо розташування під block3 з урахуванням margin */
+  left: calc(79.6% + 5px); 
   width: 20%;
-  height: calc( 50% - 5px);
+  height: calc( 50% - 5px); /* Вираховуємо висоту з урахуванням margin */
   background-color: #040817;
 }
 
@@ -86,7 +86,7 @@ body, html {
     top: calc(65% + 5px); /* Змінюємо, щоб блок6 був під блоком3 з урахуванням margin */
     left: 20%; /* Додаємо відстань зліва */
     width: calc(60% - 5px); /* Вираховуємо ширину з урахуванням margin */
-    height: calc(15% - 5px);
+    height: calc(15% - 5px); /* Вираховуємо висоту з урахуванням margin */
     margin: 5px 0;
     background-color: #0d042e;
 }
@@ -179,6 +179,7 @@ a {
     text-decoration: none;
     transition: color 0.2s;
 }
+
 a:hover {
     color: #fff;
     text-decoration: underline;
