@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <link rel="stylesheet" href="../css/style-members.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+  window.onload = function() {
+    imageMapResize();
+  };
+</script>
+<body>
+    <div class="container">
+        <div class="section header"><h1>Photo of the band</h1></div>
+        <div class="section menu">
+            <h3>Menu</h3>                   
+            <ul>
+                <li><a href="../index.html">Main Page</a></li>
+                <li><a href="albums.html">Albums</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="history_of_band.html">History of Band</a></li>
+            </ul>
+        </div>
+        <div class="section band-image">
+            <img src="https://www.billboard.com/wp-content/uploads/2023/04/01-Linkin-Park-cr-James-Minchin-billboard-1548.jpg?w=1292&h=861&crop=1"
+             alt="Linkin Park Band" usemap="#bandmap">
+             <map name="bandmap">
+                <area shape="circle" coords="161, 156, 71" href="https://en.wikipedia.org/wiki/Mike_Shinoda" alt="Mike Shinoda">
+                <area shape="circle" coords="357, 211, 70" href="https://en.wikipedia.org/wiki/Brad_Delson" alt="Brad Delson">
+                <area shape="circle" coords="590, 158, 57" href="https://en.wikipedia.org/wiki/Joe_Hahn" alt="Joe Hahn">
+                <area shape="circle" coords="705, 116, 63" href="https://en.wikipedia.org/wiki/Rob_Bourdon" alt="Rob Bourdon">
+                <area shape="circle" coords="863, 167, 63" href="https://en.wikipedia.org/wiki/Dave_Farrell" alt="Dave Farrell">
+                <area shape="circle" coords="1102, 172, 54" href="https://en.wikipedia.org/wiki/Chester_Bennington" alt="Chester Bennington">
+             </map>
+        </div>
+    </div>
+    
+</body>
+</html>
