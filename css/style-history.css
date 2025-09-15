@@ -73,6 +73,14 @@ li {
     font-size: clamp(8.5px, 1.5vw, 20px);
 }
 
+li strong {
+    color: #b83030;
+}
+
+li em { 
+    color: #0f7d34;
+}
+
 .menu h3 {
     font-size: clamp(18px, 2vw, 36px);
     font-weight: bold;    
