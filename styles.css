@@ -1,13 +1,13 @@
 :root {
-  --col-1: 15%;
-  --col-2: 70%;
-  --col-3: 15%;
+  --col-1: 20%;
+  --col-2: 60%;
+  --col-3: 20%;
   
-  --row-1: 120px;   /* header */
-  --row-2: 200px;   /* після header */
+  --row-1: 140px;   /* header */
+  --row-2: 80px;   /* після header */
   --row-3: 300px;   /* середня зона */
   --row-4: 100px;   /* перед footer */
-  --row-5: 120px;   /* footer */
+  --row-5: 140px;   /* footer */
 }
 
 html, body {
@@ -20,7 +20,7 @@ html, body {
 
 .layout-table {
   width: 100%;
-  height: 100vh;
+  min-height: 800px;
   border-collapse: collapse;
   table-layout: fixed; /* фіксована сітка */
 }
@@ -33,6 +33,11 @@ html, body {
   border: 1px solid #333;
   vertical-align: center;
   padding: 10px;
+}
+
+.row1 td,
+.row5 td {
+  border: none;
 }
 
 /* Мінімальні висоти для кожного рядка */
@@ -64,7 +69,8 @@ html, body {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* Списки */
