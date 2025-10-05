@@ -1,44 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linkin Park</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Табличний макет</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="block block1">
-            <div class="block-x"><h2>LINKIN PARK</h2></div>
-            <p>And now you've become a part of me, you'll always be right here</p>
-        </div>        
-        <div class="block block2"> 
-            <h3>Menu</h3>                   
-            <ul>
-                <li><a href="html/albums.html">Albums</a></li>
-                <li><a href="html/members.html">Members</a></li>
-                <li><a href="html/awards.html">Awards</a></li>
-                <li><a href="html/history_of_band.html">History of Band</a></li>
-            </ul>
-        </div>
-        <div class="block3-6-container">
-            <div class="block block3">
-                <p>When life leaves us blind, love keeps us kind</p>
-            </div>        
-            <div class="block block4">
-                <p>Leave out all the rest</p>                
-            </div>
-            <div class="block block6">
-                <p>You live what you've learned</p>
-            </div>
-            <div class="block block5">
-                <p>It's easier to run, replacing this pain with something numb</p>
-            </div>   
-        </div>                            
-        <div class="block block7">
-            <div class="block-y"><h2>One More Light</h2></div>
-            <p>I wanna heal, I wanna feel, what I thought was never real</p>
-        </div>
-    </div>  
+  <table class="layout-table" role="presentation">
+    <colgroup>
+      <col class="col1">
+      <col class="col2">
+      <col class="col3">
+    </colgroup>
+
+    <!-- Рядок 1: Блок 1 -->
+   <tr class="row row1">
+      <td class="block block1-left">
+        <div class="blockX">Блок X</div>
+      </td>
+      <td class="block block1-center"></td>
+      <td class="block block1-right"><p>Просто текст праворуч</p></td>
+    </tr>
+
+    <!-- Рядок 2 -->
+    <tr class="row row2">
+      <td class="block block2" rowspan="3">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="html/albums.html">Albums</a></li>
+          <li><a href="html/members.html">Members</a></li>
+          <li><a href="html/awards.html">Awards</a></li>
+          <li><a href="html/history_of_band.html">History of Band</a></li>
+        </ul>
+      </td>
+      <td class="block block3" colspan="2">
+        <p>Комірка 3: Текст посередині</p>
+      </td>
+    </tr>
+
+    <!-- Рядок 3 -->
+    <tr class="row row3">
+      <td class="block block4">
+        <img src="img.jpg" alt="Зображення">
+      </td>
+      <td class="block block5" rowspan="2">
+        <ol>
+          <li>Hybrid Theory</li>
+          <li>Meteora</li>
+          <li>Minutes to Midnight</li>
+          <li>A Thousand Suns</li>
+          <li>Living Things</li>
+          <li>The Hunting Party</li>
+          <li>One More Light</li>
+        </ol>
+      </td>
+    </tr>
+
+    <!-- Рядок 4 -->
+    <tr class="row row4">
+      <td class="block block6">
+        <p>Комірка 6: Текст</p>
+      </td>
+    </tr>
+
+    <!-- Рядок 5: Блок 7 -->
+    <tr class="row row5">
+      <td class="block block7-left"><p>Просто текст ліворуч</p></td>
+      <td class="block block7-center"></td>
+      <td class="block block7-right">
+        <div class="blockY">Блок Y</div>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
